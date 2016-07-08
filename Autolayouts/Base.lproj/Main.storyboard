@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,26 +21,43 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHl-1d-boB">
                                 <rect key="frame" x="0.0" y="20" width="300" height="290"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwb-ym-p7g">
-                                        <rect key="frame" x="75" y="199" width="150" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat_logo_1" translatesAutoresizingMaskIntoConstraints="NO" id="PpL-m8-ysG">
+                                        <rect key="frame" x="77" y="15" width="146" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="PpL-m8-ysG" secondAttribute="height" multiplier="22:15" id="Cyg-Ad-XKU"/>
+                                            <constraint firstAttribute="height" constant="100" id="vEq-6p-Jxf"/>
+                                            <constraint firstAttribute="width" constant="220" id="wB3-p5-SJg"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="wB3-p5-SJg"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="na2-9s-YAE">
+                                        <rect key="frame" x="129" y="150" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" cyan="0.1865037752" magenta="0.088847525169999997" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="Gwb-ym-p7g" firstAttribute="top" secondItem="GHl-1d-boB" secondAttribute="top" constant="199" id="63G-zm-DPU"/>
-                                    <constraint firstItem="Gwb-ym-p7g" firstAttribute="leading" secondItem="GHl-1d-boB" secondAttribute="leading" constant="75" id="BzE-Mo-TJS"/>
+                                    <constraint firstItem="PpL-m8-ysG" firstAttribute="top" secondItem="GHl-1d-boB" secondAttribute="top" constant="43" id="2LI-ZQ-aKv"/>
+                                    <constraint firstItem="na2-9s-YAE" firstAttribute="centerX" secondItem="PpL-m8-ysG" secondAttribute="centerX" id="7l4-Nk-PF7"/>
+                                    <constraint firstAttribute="bottom" secondItem="PpL-m8-ysG" secondAttribute="bottom" constant="119" id="FsX-7a-cVy"/>
+                                    <constraint firstItem="PpL-m8-ysG" firstAttribute="top" secondItem="GHl-1d-boB" secondAttribute="top" constant="15" id="Gba-cl-wKA"/>
                                     <constraint firstAttribute="height" constant="300" id="OLu-qC-gZc"/>
+                                    <constraint firstItem="na2-9s-YAE" firstAttribute="top" secondItem="PpL-m8-ysG" secondAttribute="bottom" constant="35" id="aBj-xG-HCw"/>
+                                    <constraint firstItem="PpL-m8-ysG" firstAttribute="centerX" secondItem="GHl-1d-boB" secondAttribute="centerX" id="bYA-li-AE5"/>
                                     <constraint firstAttribute="width" constant="191" id="dA2-DT-E20"/>
-                                    <constraint firstAttribute="bottom" secondItem="Gwb-ym-p7g" secondAttribute="bottom" constant="70" id="sgc-zc-WZp"/>
-                                    <constraint firstAttribute="trailing" secondItem="Gwb-ym-p7g" secondAttribute="trailing" constant="75" id="zXc-27-HYl"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="OLu-qC-gZc"/>
                                         <exclude reference="dA2-DT-E20"/>
+                                        <exclude reference="2LI-ZQ-aKv"/>
+                                        <exclude reference="FsX-7a-cVy"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -96,4 +114,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="cat_logo_1" width="960" height="686"/>
+    </resources>
 </document>

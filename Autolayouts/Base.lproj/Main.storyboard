@@ -113,9 +113,17 @@
                                             </mask>
                                         </variation>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHd-OG-czE">
+                                        <rect key="frame" x="129" y="155" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" cyan="0.67473259228187921" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="qHd-OG-czE" firstAttribute="centerX" secondItem="YrY-ZX-hFP" secondAttribute="centerX" id="1GU-dq-eQS"/>
+                                    <constraint firstItem="qHd-OG-czE" firstAttribute="top" secondItem="YrY-ZX-hFP" secondAttribute="bottom" constant="40" id="MM1-vU-9lN"/>
                                     <constraint firstItem="YrY-ZX-hFP" firstAttribute="top" secondItem="StI-q6-cHO" secondAttribute="topMargin" id="fAx-ug-9wk"/>
                                     <constraint firstItem="YrY-ZX-hFP" firstAttribute="width" secondItem="YrY-ZX-hFP" secondAttribute="height" multiplier="22:15" id="oCO-S0-xdo"/>
                                     <constraint firstItem="YrY-ZX-hFP" firstAttribute="top" secondItem="StI-q6-cHO" secondAttribute="top" constant="15" id="rbo-ir-Nuu"/>
@@ -146,10 +154,18 @@
                                             </mask>
                                         </variation>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gj-aN-IO4">
+                                        <rect key="frame" x="129" y="155" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" cyan="0.69113685339999997" magenta="0.59824892240000005" yellow="0.45253232760000001" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="8gj-aN-IO4" firstAttribute="top" secondItem="pys-9i-ifJ" secondAttribute="bottom" constant="40" id="FTc-jH-gQs"/>
                                     <constraint firstItem="pys-9i-ifJ" firstAttribute="width" secondItem="pys-9i-ifJ" secondAttribute="height" multiplier="22:15" id="NKs-XY-69x"/>
+                                    <constraint firstItem="8gj-aN-IO4" firstAttribute="centerX" secondItem="pys-9i-ifJ" secondAttribute="centerX" id="O0g-c9-C18"/>
                                     <constraint firstItem="pys-9i-ifJ" firstAttribute="top" secondItem="hfC-Od-U41" secondAttribute="top" constant="15" id="XTV-4H-WNw"/>
                                     <constraint firstItem="pys-9i-ifJ" firstAttribute="centerX" secondItem="hfC-Od-U41" secondAttribute="centerX" id="jvm-kE-aOD"/>
                                     <constraint firstItem="pys-9i-ifJ" firstAttribute="top" secondItem="hfC-Od-U41" secondAttribute="topMargin" id="pCW-ac-ESE"/>
